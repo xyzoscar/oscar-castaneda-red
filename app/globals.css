@@ -8,6 +8,16 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-theme-neutral-10: #f9fafb;
+  --color-theme-neutral-20: #e5e7eb;
+  --color-theme-neutral-30: #d1d5db;
+  --color-theme-neutral-40: #aeb2ba;
+  --color-theme-neutral-50: #6b7280;
+  --color-theme-neutral-60: #4b5563;
+  --color-theme-neutral-70: #374151;
+  --color-theme-neutral-80: #1f2937;
+  --color-theme-neutral-90: #111827;
+  --color-theme-neutral-100: #030712;
 }
 
 @media (prefers-color-scheme: dark) {
