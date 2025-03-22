@@ -22,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${interTight.variable}  antialiased`}>
-        <div className="container mx-auto">
-          <Navigation />
-          <main>{children}</main>
+        <div className="w-full">
+          <div className="container px-5 md:px-6 mx-auto">
+            <Navigation />
+            <main>{children}</main>
+          </div>
         </div>
       </body>
     </html>

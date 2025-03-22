@@ -7,10 +7,11 @@ export default function Home() {
       <Text size="28" weight="medium" className="mb-4">
         Hello! I&#39;m Oscar.
       </Text>
-      <H1 className="max-w-[1056px] mb-16">
-        Designing digital product with emphasis on visual design
+      <H1 className="mb-16 max-w-5xl">
+        Designing digital product with emphasis on{" "}
+        <span className="text-theme-neutral-40">visual design</span>
       </H1>
-      <Text size="22" className="w-[518px]">
+      <Text size="22">
         A multidisciplinary designer harnessing the power of design to achieve
         online goals.
       </Text>
