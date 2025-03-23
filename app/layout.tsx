@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
 import "./globals.css";
-import { Navigation } from "@/components/layout/navigation";
 
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
@@ -23,8 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${interTight.variable}  antialiased`}>
         <div className="w-full">
-          <div className="container px-5 md:px-6 mx-auto">
-            <Navigation />
+          <div className="max-w-6xl px-5 md:px-6 mx-auto">
             <main>{children}</main>
           </div>
         </div>

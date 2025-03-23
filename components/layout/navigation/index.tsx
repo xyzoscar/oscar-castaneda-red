@@ -1,8 +1,8 @@
-import { Logo } from "@/components/common/logo";
+import { Logo } from "../logo";
 
 export function Navigation() {
   return (
-    <nav className="py-6 mb-16">
+    <nav className="mt-10">
       <Logo />
     </nav>
   );

@@ -1,20 +1,15 @@
-import { Text } from "@/components/common/typography/body";
-import { H1 } from "@/components/common/typography/heading";
+import { Footer } from "@/components/layout/footer";
+import { Navigation } from "@/components/layout/navigation";
+import { Hero } from "@/components/sections/home/hero";
+import { PortfolioGrid } from "@/components/sections/shared/portfolio-grid";
 
 export default function Home() {
   return (
     <div>
-      <Text size="28" weight="medium" className="mb-4">
-        Hello! I&#39;m Oscar.
-      </Text>
-      <H1 className="mb-16 max-w-5xl">
-        Designing digital product with emphasis on{" "}
-        <span className="text-theme-neutral-40">visual design</span>
-      </H1>
-      <Text size="22">
-        A multidisciplinary designer harnessing the power of design to achieve
-        online goals.
-      </Text>
+      <Navigation />
+      <Hero />
+      <PortfolioGrid />
+      <Footer />
     </div>
   );
 }
