@@ -72,14 +72,14 @@ export function PortfolioGrid() {
                 className="object-cover transition-all duration-500 group-hover:scale-[1.03]"
               />
             </div>
-            <div className="py-4 text-center">
-              <h3 className="relative inline-block font-medium text-lg ">
+            <div className="py-4">
+              <h2 className="relative inline-block font-medium text-lg ">
                 <span className="inline-block transition-colors duration-300">
                   {project.title}
                 </span>
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-black origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-              </h3>
-              <p className="text-sm text-gray-500 transition-colors duration-300 group-hover:text-gray-700">
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-black dark:bg-white origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+              </h2>
+              <p className="text-sm text-gray-500 dark:text-gray-300 transition-colors duration-300 group-hover:text-gray-700 dark:group-hover:text-white">
                 {project.description}
               </p>
             </div>
