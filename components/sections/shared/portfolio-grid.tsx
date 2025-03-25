@@ -6,54 +6,63 @@ const projectsData = [
     id: 1,
     title: "Expense Tracker",
     description: "Monitor daily expenses easily",
+    slug: "expense-tracker",
     imageUrl: "/images/placeholder.avif",
   },
   {
     id: 2,
     title: "Invoice Manager",
     description: "Create and manage invoices fast",
+    slug: "invoice-manager",
     imageUrl: "/images/placeholder.avif",
   },
   {
     id: 3,
     title: "Budget Planner",
     description: "Set budgets and control spending",
+    slug: "budget-planner",
     imageUrl: "/images/placeholder.avif",
   },
   {
     id: 4,
     title: "Stock Analyzer",
     description: "Analyze real-time market trends",
+    slug: "stock-analyzer",
     imageUrl: "/images/placeholder.avif",
   },
   {
     id: 5,
     title: "Tax Calculator",
     description: "Calculate taxes with accuracy",
+    slug: "tax-calculator",
     imageUrl: "/images/placeholder.avif",
   },
   {
     id: 6,
     title: "Payroll System",
     description: "Automate employee payrolls easily",
+    slug: "payroll-system",
     imageUrl: "/images/placeholder.avif",
   },
   {
     id: 7,
     title: "Crypto Wallet",
     description: "Securely store and trade crypto",
+    slug: "crypto-wallet",
     imageUrl: "/images/placeholder.avif",
   },
   {
     id: 8,
     title: "Loan Manager",
     description: "Manage and track all loans",
+    slug: "loan-Manager",
     imageUrl: "/images/placeholder.avif",
   },
   {
     id: 9,
     title: "Financial Dashboard",
     description: "Visualize financial KPIs clearly",
+    slug: "financial-dashboard",
     imageUrl: "/images/placeholder.avif",
   },
 ];
@@ -63,7 +72,10 @@ export function PortfolioGrid() {
     <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       {projectsData.map((project) => (
         <div key={project.id} className="overflow-hidden">
-          <Link href="/" className="block group hover:cursor-pointer">
+          <Link
+            href={`/project/${project.slug}`}
+            className="block group hover:cursor-pointer"
+          >
             <div className="aspect-[4/3] overflow-hidden bg-gray-100 relative">
               <Image
                 src={project.imageUrl}
