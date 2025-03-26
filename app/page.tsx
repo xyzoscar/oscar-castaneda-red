@@ -1,11 +1,7 @@
-import { Hero } from "@/components/sections/home/hero";
-import { PortfolioGrid } from "@/components/sections/shared/portfolio-grid";
-
 export default function Home() {
   return (
     <div>
-      <Hero />
-      <PortfolioGrid />
+      <h1 className="text-5xl font-semibold mt-6">Hello world</h1>
     </div>
   );
 }
